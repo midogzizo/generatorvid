@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* الثيم العام — داكن حديث بخط Cairo العربي */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Cairo", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* شريط تقدم بألوان متدرجة */
+.progress-bar {
+  background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+}
+
+/* الأرقام تُعرض LTR داخل النص العربي لتفادي تشوه المعرّفات */
+.num, code, .mono {
+  direction: ltr;
+  unicode-bidi: embed;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 8px; }

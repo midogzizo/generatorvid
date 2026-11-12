@@ -1,0 +1,18 @@
+# أسرار — لا تُرفع إطلاقًا
+.env
+.env.*
+!.env.example
+
+# تبعيات وبناء
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# ملفات محلية
+local-dev.db
+*.db
+*.log
+.DS_Store
